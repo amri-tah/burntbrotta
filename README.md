@@ -33,10 +33,12 @@ Fonts used:
 - Climate Crisis
 
 ## The team:
-[Amritha](https://github.com/amri-tah)
-
-[Manasha](https://github.com/Manasha-1204)
-
-[Samhitha](https://github.com/Samhitha-07)
+<table align="center" style="border: none;">
+<tr>
+<td align="center" width="200"><pre><a href="https://github.com/amri-tah"><img src="https://avatars.githubusercontent.com/u/111682039?v=4" width="200" alt="Profile" /><br><sub>@amri-tah</sub></a></pre></td>
+<td align="center" width="200"><pre><a href="https://github.com/Samhitha-07"><img src="https://avatars.githubusercontent.com/Samhitha-07" width="200" alt="Profile" /><br><sub>@Samhitha-07</sub></a></pre></td>
+<td align="center" width="200"><pre><a href="https://github.com/Manasha-1204"><img src="https://avatars.githubusercontent.com/Manasha-1204" width="200" alt="Profile" /><br><sub>@Manasha-1204</sub></a></pre></td>
+</tr>
+</table>
 
 
