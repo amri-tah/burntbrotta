@@ -8,7 +8,7 @@ window.onload = function () {
       const recipe = recipes.find((r) => r.id === recipeId);
 
       if (recipe) {
-        document.getElementById("recipe-name").innerText = recipe.name;
+        document.getElementById("recipe-name").innerText = recipe.name.toUpperCase();
         document.getElementById("recipe-image").src = recipe.image;
         document.getElementById("recipe-image").height = 600;
         document.getElementById("recipe-image").width = 400;
