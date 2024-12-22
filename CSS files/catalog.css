@@ -272,3 +272,15 @@ body{
     .content {
         flex: 1;
     }
+
+    /*==================================================*/
+
+    .Copyright{
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        font-family: "Poppins";
+        font-size: 15px;
+        color: #ffffff;
+        background-color: #1f1f1f; 
+    }
