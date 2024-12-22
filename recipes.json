@@ -216,7 +216,7 @@
     "tags": ["20 mins", "1 serving", "Easy"]
   },
   {
-    "id": 5,
+    "id": "5",
     "name": "Bubble Tea",
     "image": "images/recipiepage/bubble tea.jpg",
     "description": "Bubble tea, as the name suggests, is a tea-based drink from Taiwan. It can come in many flavours and have toppings like chewy tapioca pearls, grass jelly, aloe vera, or red beans.",
@@ -261,7 +261,7 @@
     "tags": ["15 mins", "1 serving", "Easy"]
   },
   {
-    "id": 6,
+    "id": "6",
     "name": "Thai Red Curry",
     "image": "images/recipiepage/Thai red curry.jpg",
     "description": "This creamy Thai curry is on regular rotation in our home. It's loaded with veggies, tofu, and potatoes, making it hearty and filling.",
