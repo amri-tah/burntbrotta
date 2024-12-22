@@ -37,17 +37,18 @@
       "20. Serve hot with Salna or Kurma with a side of thayir pachadi/onion raita. If not serving immediately, store them in hotpack/hotbox to retain the softness. You can also freeze the cooked parottas in ziplock bags for upto few weeks."
     ],
     "reviews": {
-      "average_rating": 4.0,
       "user_reviews": [
         {
-          "username": "Tharun",
+          "username": "tharun123",
           "rating": 4,
-          "comment": "Very refreshing taste!! Recommend for all."
+          "comment": "Very refreshing taste!! Recommend for all.",
+          "postedAt": "2024-12-22T15:45:00Z"
         },
         {
-          "username": "Ajith",
+          "username": "ajith23",
           "rating": 4,
-          "comment": "Great flavor combination. Took me to my childhood!"
+          "comment": "Great flavor combination. Took me to my childhood!",
+          "postedAt": "2024-12-22T15:45:00Z"
         }
       ]
     },
@@ -62,48 +63,29 @@
     "servings": "1 serving",
     "difficulty": "Easy",
     "ingredients": [
-      {
-        "category": "Bumbu (blend of spices)",
-        "items": [
-          "0.75 clove garlic, whole",
-          "0.5 medium shallot, quartered",
-          "0.5 red hot chili pepper, or less for less spicy",
-          "1¼ tsp fresh ginger, peeled",
-          "¾ tsp vegetable oil",
-          "¼ + ⅛ tsp fresh turmeric",
-          "¼ + ⅛ tsp ground coriander"
-        ]
-      },
-      {
-        "category": "Soup base",
-        "items": [
-          "¾ tsp vegetable oil",
-          "0.5 medium potato, peeled, cut into ½cm slices",
-          "1 cup water",
-          "0.25 vegetable bouillon cube",
-          "⅓ cup + 1½ Tbsp canned full-fat coconut milk",
-          "1.3 oz dry ramen noodles"
-        ]
-      },
-      {
-        "category": "Vegan 'chicken'",
-        "items": [
-          "¾ tsp vegetable oil",
-          "1.8 oz mock 'chicken' pieces",
-          "0.75 clove garlic, thinly sliced",
-          "0.5 medium shallot, minced",
-          "½ tsp chicken spice mix"
-        ]
-      },
-      {
-        "category": "Garnish",
-        "items": [
-          "2½ Tbsp fresh bean sprouts",
-          "1 Tbsp fresh cilantro (optional)",
-          "0.25 stalk green onion, sliced",
-          "1½ tsp crispy fried onions (optional)"
-        ]
-      }
+      "0.75 clove garlic, whole",
+      "0.5 medium shallot, quartered",
+      "0.5 red hot chili pepper, or less for less spicy",
+      "1¼ tsp fresh ginger, peeled",
+      "¾ tsp vegetable oil",
+      "¼ + ⅛ tsp fresh turmeric",
+      "¼ + ⅛ tsp ground coriander",
+
+      "¾ tsp vegetable oil",
+      "0.5 medium potato, peeled, cut into ½cm slices",
+      "1 cup water",
+      "0.25 vegetable bouillon cube",
+      "⅓ cup + 1½ Tbsp canned full-fat coconut milk",
+      "1.3 oz dry ramen noodles",
+      "¾ tsp vegetable oil",
+      "1.8 oz mock 'chicken' pieces",
+      "0.75 clove garlic, thinly sliced",
+      "0.5 medium shallot, minced",
+      "½ tsp chicken spice mix",
+      "2½ Tbsp fresh bean sprouts",
+      "1 Tbsp fresh cilantro (optional)",
+      "0.25 stalk green onion, sliced",
+      "1½ tsp crispy fried onions (optional)"
     ],
     "instructions": [
       "1. Add all of the bumbu ingredients to a small food processor. Blend until smooth.",
@@ -116,17 +98,18 @@
       "8. Meanwhile, prepare the noodles according to the package instructions. For us, the noodles simply needed to sit in boiling water for 3 minutes. Add the noodles to a bowl, and ladle the soup over top. Garnish, and enjoy!"
     ],
     "reviews": {
-      "average_rating": 5,
       "user_reviews": [
         {
-          "username": "Amritha",
+          "username": "amritha23",
           "rating": 5,
-          "comment": "Delicious and flavorful! A great meal for any time."
+          "comment": "Delicious and flavorful! A great meal for any time.",
+          "postedAt": "2024-12-22T15:45:00Z"
         },
         {
-          "username": "Samhitha",
+          "username": "samhitha09",
           "rating": 4,
-          "comment": "Loved the soup but found it a bit spicy for my taste."
+          "comment": "Loved the soup but found it a bit spicy for my taste.",
+          "postedAt": "2024-12-22T15:45:00Z"
         }
       ]
     },
@@ -165,17 +148,18 @@
       "4. Serve with toasted pitas, and garnish with za'atar, cilantro, and lemon slices. Enjoy!"
     ],
     "reviews": {
-      "average_rating": 5,
       "user_reviews": [
         {
-          "username": "Harini",
+          "username": "hariniNagas212",
           "rating": 5,
-          "comment": "With the garnish, the dish looks so yumm!!"
+          "comment": "With the garnish, the dish looks so yumm!!",
+          "postedAt": "2024-12-22T15:45:00Z"
         },
         {
-          "username": "Harish",
+          "username": "meharish16",
           "rating": 4,
-          "comment": "Great taste! Would recommend to all!!"
+          "comment": "Great taste! Would recommend to all!!",
+          "postedAt": "2024-12-22T15:45:00Z"
         }
       ]
     },
@@ -189,25 +173,20 @@
     "time": "20 mins",
     "servings": 1,
     "difficulty": "Easy",
-    "ingredients": {
-      "chocolate-mousse": [
-        "1.8 oz (50 g) silken tofu, drained",
-        "1.2 oz (33 g) melted dairy-free dark chocolate",
-        "1 tsp (5 g) granulated sugar",
-        "1 pinch (0.3 mL) pure vanilla extract",
-        "1 pinch (0.1 g) ground cardamom (optional)"
-      ],
-      "fruit-layers": [
-        "4 Tbsp (31 g) fresh raspberries, for mashing",
-        "⅓ cup (41 g) fresh raspberries, remaining whole"
-      ],
-      "whip": [
-        "1 Tbsp + 1 tsp (20 mL) vegan whipping cream",
-        "1 tsp (5 g) granulated sugar",
-        "½ tsp (1 g) cream stabilizer"
-      ],
-      "optional-garnishes": ["chocolate shavings", "caramel shards"]
-    },
+    "ingredients": [
+      "1.8 oz (50 g) silken tofu, drained",
+      "1.2 oz (33 g) melted dairy-free dark chocolate",
+      "1 tsp (5 g) granulated sugar",
+      "1 pinch (0.3 mL) pure vanilla extract",
+      "1 pinch (0.1 g) ground cardamom (optional)",
+      "4 Tbsp (31 g) fresh raspberries, for mashing",
+      "⅓ cup (41 g) fresh raspberries, remaining whole",
+      "1 Tbsp + 1 tsp (20 mL) vegan whipping cream",
+      "1 tsp (5 g) granulated sugar",
+      "½ tsp (1 g) cream stabilizer"
+    ],
+    "optional-garnishes": ["chocolate shavings", "caramel shards"],
+
     "instructions": [
       "1. Add the chocolate mousse ingredients to a food processor. Blend until smooth.",
       "2. To each of the serving glasses, add ¼ cup of raspberries. Lightly mash the raspberries with the back of a spoon or tamper.",
@@ -219,17 +198,18 @@
       "8. Top with the reserved whipped cream and any desired garnishes. Enjoy!"
     ],
     "reviews": {
-      "average_rating": 4.7,
       "user_reviews": [
         {
-          "username": "Saran Hiruthik",
+          "username": "hirux06",
           "rating": 5,
-          "comment": "Absolutely delicious! So moist and rich, the best vegan cake I've had."
+          "comment": "Absolutely delicious! So moist and rich, the best vegan cake I've had.",
+          "postedAt": "2024-12-22T15:45:00Z"
         },
         {
-          "username": "Kavinesh",
+          "username": "kavinKrish45",
           "rating": 4,
-          "comment": "Very tasty, but I would reduce the sugar next time."
+          "comment": "Very tasty, but I would reduce the sugar next time.",
+          "postedAt": "2024-12-22T15:45:00Z"
         }
       ]
     },
@@ -263,17 +243,18 @@
       "7. Stir well and taste test. Different brands of ube spread vary in sweetness, so add more thinned-out ube spread to taste if desired."
     ],
     "reviews": {
-      "average_rating": 4.3,
       "user_reviews": [
         {
-          "username": "Akshay",
+          "username": "akshay34",
           "rating": 4,
-          "comment": "A simple and tasty bubble tea."
+          "comment": "A simple and tasty bubble tea.",
+          "postedAt": "2024-12-22T15:45:00Z"
         },
         {
-          "username": "Keertan",
+          "username": "keerth98",
           "rating": 4,
-          "comment": "A perfect snack-drink"
+          "comment": "A perfect snack-drink",
+          "postedAt": "2024-12-22T15:45:00Z"
         }
       ]
     },
@@ -313,17 +294,18 @@
       "7. Serve with the rice, and top with cashews for crunch. Enjoy!"
     ],
     "reviews": {
-      "average_rating": 4.3,
       "user_reviews": [
         {
-          "username": "Ashwin",
+          "username": "ashwinroxx23",
           "rating": 4,
-          "comment": "A simple and tasty stir fry. Loved the tenderness of the vegetables."
+          "comment": "A simple and tasty stir fry. Loved the tenderness of the vegetables.",
+          "postedAt": "2024-12-22T15:45:00Z"
         },
         {
-          "username": "Saran Dharshan",
+          "username": "saranDharshan",
           "rating": 4,
-          "comment": "A great healthy option. I added some tofu for extra protein!"
+          "comment": "A great healthy option. I added some tofu for extra protein!",
+          "postedAt": "2024-12-22T15:45:00Z"
         }
       ]
     },
