@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                     </div>
                     <a href="recipe.html?id=${recipe.id}">
-                        <i class="fas fa-shopping-basket basket"></i>
+                        <i class="fas fa-heart basket"></i>
                     </a>
                 `;
 
@@ -56,10 +56,10 @@ function generateStars(reviews) {
     let stars = "";
     for (let i = 0; i < 5; i++) {
         if (i < averageRating) {
-            stars += '<i class="fas fa-star"></i>';
+            stars += '<i class="fas fa-star"></i> ';
         } else {
-            stars += '<i class="far fa-star"></i>';
+            stars += '<i class="far fa-star"></i> ';
         }
     }
-    return stars;
+    return stars.trim();
 }
