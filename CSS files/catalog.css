@@ -275,12 +275,15 @@ body{
 
     /*==================================================*/
 
-    .Copyright{
+    .Copyright {
         text-align: center;
-        padding: 10px;
+        padding: 15px;
         margin: 0;
         font-family: "Poppins";
         font-size: 15px;
-        color: #ffffff;
-        background-color: #1f1f1f; 
-    }
+        color: #ffe55b;
+        background-color: #1f1f1f;
+        line-height: 1.8;
+        letter-spacing: 0.5px;
+      }
+      
