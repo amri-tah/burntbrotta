@@ -26,11 +26,13 @@ body {
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.02);
-    margin: 15px 0;
+    margin: 20px 0;
     transition: 0.2s ease;
     position: relative;
+    padding: 45px 45px;
     background-color: #f3e7ae;
 }
+
 
 #product1 .pro:hover {
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.06);
@@ -84,17 +86,18 @@ body {
 }
 
 #product1 .pro .basket {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50px;
-    background-color: #e8f6ea;
-    font-weight: 500;
-    color: #088178;
-    border: 1px solid #cce7d0;
+    font-size: 36px;
+    color: #ff4d4d; 
     position: absolute;
     right: 10px;
     bottom: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#product1 .pro .basket:hover {
+    color: #ff1a1a;
+    transform: scale(1.1);
 }
 
 * {
