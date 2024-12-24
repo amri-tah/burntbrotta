@@ -280,6 +280,18 @@ body {
     flex: 1;
 }
 
+.Copyright {
+        text-align: center;
+        padding: 15px;
+        margin: 0;
+        font-family: "Poppins";
+        font-size: 15px;
+        color: #ffe55b;
+        background-color: #1f1f1f;
+        line-height: 1.8;
+        letter-spacing: 0.5px;
+      }
+
 /* Media Queries for Responsive Design */
 @media (max-width: 1200px) {
     #product1 .pro {
@@ -297,4 +309,4 @@ body {
     #product1 .pro {
         width: 100%;
     }
-}
+

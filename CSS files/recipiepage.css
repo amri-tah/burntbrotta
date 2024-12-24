@@ -257,3 +257,17 @@ footer h2 {
   margin: 0;
   text-align: center;
 }
+
+/*==================================================*/
+
+.Copyright {
+  text-align: center;
+  padding: 15px;
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 15px;
+  color: #ffe55b;
+  background-color: #1f1f1f;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
