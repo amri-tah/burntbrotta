@@ -41,3 +41,36 @@ window.onload = function () {
       console.error("Error fetching the recipe data:", error);
     });
 };
+// Sample data for reviews
+const reviews = [
+  { username: "Username1", date: "2024-12-12 13:30", stars: 5, review: "Amazing recipes! I tried the Burn
+  { username: "Username2", date: "2024-11-24 14:45", stars: 5, review: "Loved it! Perfect and easy for be
+  { username: "Username3", date: "2023-09-22 20:15",stars: 4, review: "Great unique recipes but a bit har
+];
+
+function renderReviews() {
+  const reviewList = document.getElementById('review-list');
+  reviewList.innerHTML = ''; 
+
+  reviews.forEach((item) => {
+    const reviewItem = document.createElement('div');
+    reviewItem.classList.add('review-item');
+
+    reviewItem.innerHTML = `
+      <img src="profile-placeholder.png" alt="Profile" class="profile-pic" />
+      <div class="review-content">
+        <p class="review-username">${item.username}</p>
+        <p class="review-date">${item.date}</p>
+        <p class="review-stars">${'★'.repeat(item.stars)}${'☆'.repeat(5 - item.stars)}</p>
+        <p class="review-text">${item.review}</p>
+      </div>
+    `;
+
+    reviewList.appendChild(reviewItem);
+  });
+}
+
+// Load reviews on page load
+window.onload = renderReviews;
+
+  
