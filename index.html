@@ -9,7 +9,45 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
 </head>
+<style>
+  .reviews {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Poppins';
+  }
+  #review-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
 
+  .review-items{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding:20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow:0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    
+  }
+  .review-items:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+  }
+  .profile-pic{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .review-content{
+    text-align: left;
+  }
+</style>
 <body>
   <!-- setting up the Mouse cursor -->
   <div class="circle"></div>
@@ -92,7 +130,40 @@
     <div class="img2"></div>
   </div>
 </body>
+<!-- Reviews Section -->
+<div class="reviews" id="reviews">
+  <h1>Reviews</h1>
+  <div id="review-list"></div>
+</div>
 
+<script>
+  const reviews = [
+    { username: "Username1", date: "2024-12-12 13:30", stars: 5, review: "Amazing recipes! I tried the Burnt Rice Bowl and it was
+    { username: "Username2", date: "2024-11-24 14:45", stars: 5, review: "Loved it! Perfect and easy for beginners. " },
+    { username: "Username3", date: "2023-09-22 20:15", stars: 4, review: "Great unique recipes but a bit hard to follow" }
+  ];
+
+  function Reviews() {
+    const reviewList = document.getElementById('review-list');
+    reviewList.innerHTML = '';
+    reviews.forEach(review => {
+      const reviewDiv = document.createElement('div');
+      reviewDiv.classList.add('review-items');
+      reviewDiv.innerHTML = `
+        <img src="images/78-786293_1240-x-1240-0-avatar-profile-icon-png.png" alt="Profile Pic" class="profile-pic">
+        <div class="review-content">
+          <h3>${review.username}</h3>
+          <p>Posted on: ${review.date}</p>
+          <p>${'⭐'.repeat(review.stars)}</p>
+          <p>${review.review}</p>
+        </div>
+      `;
+      reviewList.appendChild(reviewDiv);
+    });
+  }
+
+  window.onload=Reviews;
+</script>
 
   <!-- Contact us-->
 <div class="contactus" >
