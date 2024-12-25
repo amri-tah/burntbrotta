@@ -81,37 +81,38 @@
 	</div>
 	</div>
 
-
-<div class="reviewncomment">
-	<form name="comment">
-		<h1>REVIEW</h1>
-    <input type="text" id="msg" name="msg" placeholder="Message">
-    </textarea>
-	</form>
-</div>
-	<form name="namendmail">
-		<div class="namenmail">
-  <input type="text" id="name" name="name" placeholder="Name"><br>
-  <input type="text" id="mail" name="mail" placeholder="E-mail">
-</div>
-	</form>
-	<div class="review" style=" color: rgb(243, 181, 25);">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                          <form>
-		<button class="button">Submit</button>
-	</form>	
-
-  <!-- Quote for fun -->
-	<div class="quote">
-		<p>"We burnt it So, you dont have to"  </p>
-	</div>
-</div>
-
+  <div class="reviewncomment">
+    <form name="reviewForm">
+      <h1>REVIEW</h1>
+      <input type="text" id="msg" name="msg" placeholder="Write your message here..." required>
+  
+      <div class="namenmail">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="mail" name="mail" placeholder="Your Email" required>
+      </div>
+      <div class="error-messages">
+        <p id="name-error" class="error"></p>
+        <p id="mail-error" class="error"></p>
+    </div>
+  
+      <div class="review">
+        <i class="fas fa-star" data-value="1"></i>
+        <i class="fas fa-star" data-value="2"></i>
+        <i class="fas fa-star" data-value="3"></i>
+        <i class="fas fa-star" data-value="4"></i>
+        <i class="fas fa-star" data-value="5"></i>
+      </div>
+  
+      <button class="button" type="submit">Submit</button>
+    </form>
+  
+    <!-- Quote for fun -->
+    <div class="quote">
+      <p>"We burnt it, so you don't have to!"</p>
+    </div>
+  </div>
+</div>  
+<script src="JS files/recipeFormValidator.js"></script>
 <!-- COmmon footer for all subpages-->
  <footer>
         <div class="footer">
