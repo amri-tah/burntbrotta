@@ -42,7 +42,7 @@ document.querySelector("form[name='reviewForm']").addEventListener("submit", fun
         toast.id = "toast";
         toast.innerHTML = `
             <span class="toast-close">&times;</span>
-            Thank you, <b>${name.value.trim()}</b>, for your hilarious and thoughtful review! 🚀😄<br> 
+            <span>Thank you, <b>${name.value.trim()}</b></span>, for your hilarious and thoughtful review! 🚀😄<br> 
             We'll treasure it forever, just like you treasure burnt toast. 🥂
         `; 
 
