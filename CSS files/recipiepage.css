@@ -258,7 +258,7 @@ input {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   font-family: 'Fuzzy Bubbles', cursive;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   line-height: 1.5;
   text-align: center;
   max-width: 300px;
@@ -275,18 +275,6 @@ input {
   font-weight: bold;
   color: #333;
 }
-#toast .toast-link {
-  color: #333;
-  text-decoration: underline;
-  font-weight: bold;
-  cursor: none;
-  transition: all 0.3s ease
-}
-#toast .toast-link:hover{
-  color: #ffa200;
-  text-decoration: none;
-}
-
 footer {
   margin: 0;
   padding: 0px;
