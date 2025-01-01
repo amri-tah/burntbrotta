@@ -216,4 +216,31 @@ footer{
     line-height: 1.8;
     letter-spacing: 0.5px;
   }
+
+@media screen and (max-width:576px){
+    .logo{
+        display: none;
+    }
+    #navbar{
+        display: block;
+        background-color: #F7F3EF;
+    }
+    .inner-container{
+        width: 80%;
+        padding: 50px;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: small;
+      }
+      .about-section{
+        padding: 700px 0px 0px 0px;
+      }
+      .footer{
+        gap: 10px;
+      }
+}
   

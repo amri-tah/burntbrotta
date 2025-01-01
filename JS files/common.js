@@ -49,13 +49,20 @@ const coords = {
 
 // JS code for navbar
 var lastScrollTop = 0;
-navbar = document.getElementById("navbar");
-window.addEventListener("scroll",function(){
-var scrollTop = window.scrollY || document.documentElement.scrollTop;
-if(scrollTop>lastScrollTop){
-    navbar.style.top="-100px";
-}else{
+var navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function () {
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  // Detect screen width
+  var isPhone = window.innerWidth <= 576;
+
+  if (scrollTop > lastScrollTop) {
+    // Apply different top values based on screen width
+    navbar.style.top = isPhone ? "-250px" : "-100px";
+  } else {
     navbar.style.top = "0";
-}
-lastScrollTop = scrollTop;
-})
+  }
+
+  lastScrollTop = scrollTop;
+});
