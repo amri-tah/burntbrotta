@@ -58,10 +58,13 @@ window.addEventListener("scroll", function () {
   var isPhone = window.innerWidth <= 576;
 
   if (scrollTop > lastScrollTop) {
-    // Apply different top values based on screen width
+    // Scrolling down: hide navbar
     navbar.style.top = isPhone ? "-250px" : "-100px";
   } else {
-    navbar.style.top = "0";
+    // Scrolling up: only show navbar if near the top
+    if (scrollTop < 175) { // Adjust threshold as needed
+      navbar.style.top = "0";
+    }
   }
 
   lastScrollTop = scrollTop;
