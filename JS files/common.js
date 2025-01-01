@@ -49,23 +49,13 @@ const coords = {
 
 // JS code for navbar
 var lastScrollTop = 0;
-var navbar = document.getElementById("navbar");
-
-window.addEventListener("scroll", function () {
+navbar = document.getElementById("navbar");
+window.addEventListener("scroll",function(){
   var scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-  // Detect screen width
-  var isPhone = window.innerWidth <= 576;
-
-  if (scrollTop > lastScrollTop) {
-    // Scrolling down: hide navbar
-    navbar.style.top = isPhone ? "-250px" : "-100px";
-  } else {
-    // Scrolling up: only show navbar if near the top
-    if (scrollTop < 50) { // Adjust threshold as needed
+if(scrollTop>lastScrollTop){
+    navbar.style.top="-100px";
+}else{
       navbar.style.top = "0";
     }
-  }
-
   lastScrollTop = scrollTop;
-});
+})
