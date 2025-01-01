@@ -62,7 +62,7 @@ window.addEventListener("scroll", function () {
     navbar.style.top = isPhone ? "-250px" : "-100px";
   } else {
     // Scrolling up: only show navbar if near the top
-    if (scrollTop < 175) { // Adjust threshold as needed
+    if (scrollTop < 50) { // Adjust threshold as needed
       navbar.style.top = "0";
     }
   }
