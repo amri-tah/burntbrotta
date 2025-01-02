@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     about_us.style.padding = "850px 0 0 0";
                 } else {
                     menus[i].style.display = "none";
-                    about_us.style.padding = "400px 0 0 0";
+                    about_us.style.padding = "300px 0 0 0";
                 }
             }
         }

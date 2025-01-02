@@ -235,6 +235,7 @@ footer{
     #navbar{
         /* display: block; */
         background-color: #F7F3EF;
+        padding-bottom: 50px;
     }
     #menu-bar{
         display: block;    }
