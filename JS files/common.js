@@ -49,13 +49,42 @@ const coords = {
 
 // JS code for navbar
 var lastScrollTop = 0;
-navbar = document.getElementById("navbar");
-window.addEventListener("scroll",function(){
+var navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function () {
   var scrollTop = window.scrollY || document.documentElement.scrollTop;
-if(scrollTop>lastScrollTop){
-    navbar.style.top="-100px";
-}else{
+
+  // Detect screen width
+  var isPhone = window.innerWidth <= 576;
+
+  if (scrollTop > lastScrollTop) {
+    // Scrolling down: hide navbar
+    navbar.style.top = isPhone ? "-250px" : "-100px";
+  } else {
+    // Scrolling up: only show navbar if near the top
       navbar.style.top = "0";
-    }
+  }
+
   lastScrollTop = scrollTop;
-})
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    var menu_bar = document.getElementById("menu-bar");
+    var menus = document.getElementsByClassName("menu");
+    var about_us = document.getElementsByClassName("about-section")[0];
+
+    menu_bar.addEventListener("click", function (event) {
+        event.stopPropagation();
+        if (about_us) { // Check if about_us is defined
+            for (var i = 0; i < menus.length; i++) {
+                if (window.getComputedStyle(menus[i]).display === "none") {
+                    menus[i].style.display = "block";
+                    about_us.style.padding = "750px 0 0 0";
+                } else {
+                    menus[i].style.display = "none";
+                    about_us.style.padding = "300px 0 0 0"; // Set padding when the menu is hidden
+                }
+            }
+        }
+    });
+});
