@@ -47,96 +47,15 @@ const coords = {
     }
     animateCircles();
 
-// // JS code for navbar
-// var lastScrollTop = 0;
-// var navbar = document.getElementById("navbar");
-
-// window.addEventListener("scroll", function () {
-//   var scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-//   // Detect screen width
-//   var isPhone = window.innerWidth <= 576;
-
-//   if (scrollTop > lastScrollTop) {
-//     // Scrolling down: hide navbar
-//     navbar.style.top = isPhone ? "-250px" : "-100px";
-//   } else if(scrollTop < 50) {
-//     // Scrolling up: only show navbar if near the top
-//       navbar.style.top = "0";
-//   }
-
-//   lastScrollTop = scrollTop;
-// });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     var menu_bar = document.getElementById("menu-bar");
-//     var menus = document.getElementsByClassName("menu");
-//     var about_us = document.getElementsByClassName("about-section")[0];
-
-//     menu_bar.addEventListener("click", function (event) {
-//         event.stopPropagation();
-//         if (about_us) { // Check if about_us is defined
-//             for (var i = 0; i < menus.length; i++) {
-//                 if (window.getComputedStyle(menus[i]).display === "none") {
-//                     menus[i].style.display = "block";
-//                     about_us.style.padding = "900px 0 0 0";
-//                 } else {
-//                     menus[i].style.display = "none";
-//                     about_us.style.padding = "750px 0 0 0"; // Set padding when the menu is hidden
-//                 }
-//             }
-//         }
-//     });
-// });
 // JS code for navbar
 var lastScrollTop = 0;
-var navbar = document.getElementById("navbar");
-
-// Add smooth transition to navbar
-navbar.style.transition = "top 0.3s ease-out";
-
-window.addEventListener("scroll", function () {
-  var scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-  // Detect screen width
-  var isPhone = window.innerWidth <= 576;
-
-  if (scrollTop > lastScrollTop) {
-    // Scrolling down: hide navbar
-    navbar.style.top = isPhone ? "-250px" : "-100px";
-  } else if(scrollTop < 50) {
-    // Scrolling up: only show navbar if near the top
+navbar = document.getElementById("navbar");
+window.addEventListener("scroll",function(){
+var scrollTop = window.scrollY || document.documentElement.scrollTop;
+if(scrollTop>lastScrollTop){
+    navbar.style.top="-130px";
+}else if(scrollTop==0){
     navbar.style.top = "0";
-  }
-
-  lastScrollTop = scrollTop;
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    var menu_bar = document.getElementById("menu-bar");
-    var menus = document.getElementsByClassName("menu");
-    var about_us = document.getElementsByClassName("about-section")[0];
-
-    // Add transitions to menus and about section
-    if (about_us) {
-        about_us.style.transition = "padding 0.3s ease-out";
-    }
-    for (var i = 0; i < menus.length; i++) {
-        menus[i].style.transition = "all 0.3s ease-out";
-    }
-
-    menu_bar.addEventListener("click", function (event) {
-        event.stopPropagation();
-        if (about_us) {
-            for (var i = 0; i < menus.length; i++) {
-                if (window.getComputedStyle(menus[i]).display === "none") {
-                    menus[i].style.display = "block";
-                    about_us.style.padding = "850px 0 0 0";
-                } else {
-                    menus[i].style.display = "none";
-                    about_us.style.padding = "300px 0 0 0";
-                }
-            }
-        }
-    });
-});
+}
+lastScrollTop = scrollTop;
+})
