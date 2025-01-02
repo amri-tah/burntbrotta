@@ -167,14 +167,14 @@ ul {
 footer {
   max-width: 100%;
   width: 100%;
-  height: 15vh;
+  height: auto;
   background-color: black;
   margin-top: auto;
   cursor: pointer;
 }
 
 .footer {
-  padding: 3%;
+  padding: 1% 3%;
   justify-content: center;
   display: flex;
   gap: 15%;
@@ -200,7 +200,7 @@ footer h2 {
 
 .Copyright {
   text-align: center;
-  padding: 1.5% 0%;
+  padding: 1% 0%;
   width: 100%;
   font-family: "Poppins";
   font-size: 0.9375em;
