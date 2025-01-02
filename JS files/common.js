@@ -131,10 +131,10 @@ document.addEventListener("DOMContentLoaded", function () {
             for (var i = 0; i < menus.length; i++) {
                 if (window.getComputedStyle(menus[i]).display === "none") {
                     menus[i].style.display = "block";
-                    about_us.style.padding = "900px 0 0 0";
+                    about_us.style.padding = "850px 0 0 0";
                 } else {
                     menus[i].style.display = "none";
-                    about_us.style.padding = "750px 0 0 0";
+                    about_us.style.padding = "400px 0 0 0";
                 }
             }
         }
