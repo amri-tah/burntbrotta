@@ -38,7 +38,7 @@ body {
 
 ul {
   display: flex;
-  gap: 8%;
+  gap: 12%;
   justify-content: space-around;
 }
 
@@ -144,7 +144,7 @@ ul {
 }
 
 .us {
-  margin-top: 0;
+  margin-top: 5%;
   width: 50%;
   max-width: 50%;
   margin-left: 25%;
@@ -219,7 +219,6 @@ footer h2 {
     padding:0%;
     width: 100%;
     margin-left: auto;
-    /* margin-left: 5%; */
   }
   #navbar a {
     font-size: 0.7em;
@@ -255,7 +254,6 @@ footer h2 {
     padding: 5% 0%;
     gap: 1%;
     height: 8vh;
-    /* width: auto; */
   }
   footer h2 {
     font-size: 0.8125em;

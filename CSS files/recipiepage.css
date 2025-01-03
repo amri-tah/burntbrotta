@@ -2,35 +2,44 @@
   scroll-behavior: smooth;
 }
 body {
-  background-color: #f7f3ef;
-  margin: 0px;
+  background-color: #F7F3EF;
+  margin: 0;
   cursor: none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
 }
 
 #navbar {
   position: fixed;
-  padding: 30px 50px 0px 70px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 3% 0% 0 3%;
   display: flex;
-  gap: 30px;
+  z-index: 999;
+  justify-items: center;
+  transition: all 300ms ease;
+  max-width: 90%;
 }
 
 .logo {
-  margin-right: 110px;
-  width: 300px;
-  height: 100px;
+  margin-right: 5%;
+  width: 25%;
+  height: 10vh;
   background-image: url("../images/logo.png");
   background-size: 60%;
   background-repeat: no-repeat;
-  margin-top: 15px;
+  margin-top: 1.5%;
 }
 
 ul {
   display: flex;
-  gap: 80px;
+  gap: 12%;
   justify-content: space-around;
-}
-#navbar {
-  transition: all 300ms ease;
 }
 
 #navbar li {
@@ -44,112 +53,99 @@ ul {
   color: black;
   text-decoration: none;
   transition: all 400ms ease;
-  border-radius: 15px;
+  border-radius: 1em;
 }
 #navbar a:hover {
   background-color: white;
   padding: 0.86rem 1.51rem;
 }
-#contact {
+
+#navbar #con {
   background-color: #ffe55b;
-  padding: 10px 20px;
-  border-radius: 13px;
+  padding: 8%;
+  border-radius: 0.5em;
+  white-space: nowrap;
 }
+
+#navbar #con:hover {
+  background-color: white;
+  padding: 0.86em 1.51em;
+}
+
 /*==================================================================*/
 .circle {
-  height: 12px;
-  width: 12px;
-  border-radius: 12px;
+  height: 1em;
+  width: 1em;
+  border-radius: 100%;
   background-color: black;
   position: fixed;
-
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 99999999; /* so that it stays on top of all other elements */
+  z-index: 99999999;
 }
+
 #wrapper {
-  margin: 0px;
-  padding: 200px;
-  padding-bottom: 0px;
+  margin: 0;
+  padding: 15% 8% 50% 10%;
+  padding-bottom: 0;
   font-family: "Poppins";
 }
+
 #imganddesc {
   display: flex;
   gap: 40px;
 }
+
 #headline {
-  width: 400px;
+  width: 30%;
+  min-width: 400px;
   height: 700px;
 }
+
 #headline h1 {
   font-family: "Poppins";
   font-size: 5rem;
   line-height: 4rem;
 }
+
 .headdesc {
   font-size: 2rem;
-  margin: 0px;
-  padding: 10px;
+  margin: 0;
+  padding: 2%;
 }
+
 .desc {
   font-size: 1rem;
-  margin: 0px;
+  margin: 0;
   text-align: justify;
 }
 
-.rec1,
-.rec2,
-.rec3,
-.rec4,
-.rec5,
-.rec6 {
+.rec1, .rec2, .rec3, .rec4, .rec5, .rec6 {
   width: 400px;
   height: 700px;
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-.rec1 {
-  background-image: url(``);
-}
-.rec2 {
-  background-image: url("../images/recipiepage/noodles.jpg");
-}
-.rec3 {
-  background-image: url("../images/recipiepage/tofu shakshuka.jpg");
-}
-.rec4 {
-  background-image: url("../images/recipiepage/chocolate mousse.jpg");
-}
-.rec5 {
-  background-image: url("../images/recipiepage/bubble tea.jpg");
-}
-.rec6 {
-  background-image: url("../images/recipiepage/Thai red curry.jpg");
+.tags_div {
+  padding: 2%;
+  display: flex;
+  gap: 1%;
 }
 
-body {
-  margin: 0px;
-}
-.tags_div {
-  padding: 10px;
-  display: flex;
-  gap: 6px;
-}
 .tag {
   background-color: rgba(255, 229, 91, 61%);
-  padding: 5px 10px;
+  padding: 1% 2%;
   max-width: 25%;
-  text-align: center;
-  color: black;
   border-radius: 2px;
-  font-family: "Poppins";
 }
+
 .ingredndirect {
   display: flex;
-  gap: 40px;
+  gap: 3%;
 }
+
 .Ingredients p {
   text-align: justify;
 }
@@ -164,30 +160,37 @@ body {
   font-family: "Poppins";
   font-size: 2rem;
 }
+
 #msg {
-  width: 850px;
-  height: 200px;
+  width: 94%;
+  height: 15vh;
   border: none;
-  margin-top: 0px;
+  margin-bottom: 10px;
 }
+
 .comment {
   font-size: 1.2rem;
 }
+
 input {
-  width: 100%;
-  height: 40px;
-  margin: 10px;
+  margin: 1%;
+  padding: 0.5% 2%;
   border: none;
   border-radius: 5px;
-  padding: 2px 30px;
   font-family: "Poppins";
 }
-.namenmail {
+ 
+ .namenmail {
   display: flex;
-  justify-content: space-around;
   gap: 20px;
-}
-.reviewncomment h1 {
+ }
+ 
+ .namenmail input {
+  width: 50%;
+  height: 40px;
+ }
+
+ .reviewncomment h1 {
   margin-top: 50px;
   color: #333;
 }
@@ -211,32 +214,36 @@ input {
 .review .fa-star {
   color: gold; 
 }
+
 .button {
   background-color: black;
-  border: 10px;
+  border: 2%;
   color: white;
-  padding: 15px 32px;
+  padding: 1.2% 2.5%;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   width: 12.5%;
-  margin: 0px 43%;
+  margin: 0 43%;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
+
 .button:hover {
-   opacity: 0.8;
+  opacity: 0.8;
 }
+
 .quote {
-  text-align: center;
   width: 100%;
-  font-family: "Fuzzy Bubbles";
   font-size: 1.7rem;
+  font-family: "Fuzzy Bubbles";
+  text-align: center;
   color: #555;
-  margin-top: 20px;
+  margin-top: 2%;
 }
+
 .error-messages {
   margin-top: 5px;
   color: red;
@@ -247,6 +254,15 @@ input {
   margin: 0;
   padding: 0;
 }
+
+#toast {
+  bottom: 2%;
+  right: 2%;
+  padding: 1.5%;
+  max-width: 25%;
+  gap: 2%;
+}
+
 #toast {
   position: fixed;
   bottom: 20px;
@@ -275,29 +291,32 @@ input {
   font-weight: bold;
   color: #333;
 }
+
 footer {
-  margin: 0;
-  padding: 0px;
-  width: 100%;
-  height: 130px;
-  cursor: pointer;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
   background-color: black;
+  margin-top: auto;
+  cursor: pointer;
 }
+
 .footer {
-  padding: auto 30px;
+  width: 100vw;
+  max-width: 100vw;
+  padding: 1% 3%;
   justify-content: center;
-  justify-items: center;
-  padding: 30px;
   display: flex;
-  gap: 200px;
+  gap: 15%;
 }
 
 .logos {
   display: flex;
 }
+
 .logos img {
-  width: 40px;
-  height: 40px;
+  width: 3em;
+  height: 3em;
 }
 
 footer h2 {
@@ -309,17 +328,19 @@ footer h2 {
   text-align: center;
 }
 
+
 /*==================================================*/
 
 .Copyright {
   text-align: center;
-  padding: 15px;
-  margin: 0;
+  padding: 1% 0%;
+  width: 100%;
   font-family: "Poppins";
-  font-size: 15px;
+  font-size: 0.9375em;
   color: #ffe55b;
   background-color: #1f1f1f;
   line-height: 1.8;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.03125em;
+  margin: 0;
 }
 

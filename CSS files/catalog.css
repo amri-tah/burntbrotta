@@ -3,13 +3,13 @@ body {
 }
 
 .sec1 {
-    padding: 30px 160px;
+    padding: 3% 10%;
 }
 
 #product1 .c-container {
     display: flex;
-    justify-content: space-between;
-    padding: 20px 0px 60px 0px;
+    justify-content: space-around;
+    padding: 2% 0 6% 0;
     flex-wrap: wrap;
     float: left;
 }
@@ -20,77 +20,76 @@ body {
 
 #product1 .pro {
     width: 23%;
-    min-width: 250px;
-    padding: 10px 12px;
-    border: 1px solid #cce7d0;
-    border-radius: 25px;
+    min-width: 15.625rem;
+    padding: 1% 1.2%;
+    border: 0.0625rem solid #cce7d0;
+    border-radius: 1.5625rem;
     cursor: pointer;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.02);
-    margin: 20px 0;
+    box-shadow: 1.25rem 1.25rem 1.25rem rgba(0, 0, 0, 0.02);
+    margin: 2% 0;
     transition: 0.2s ease;
     position: relative;
-    padding: 45px 45px;
+    padding: 4% 4%;
     background-color: #f3e7ae;
 }
 
-
 #product1 .pro:hover {
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: 1.25rem 1.25rem 1.25rem rgba(0, 0, 0, 0.06);
 }
 
 #product1 .pro img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 #product1 .pro .description {
     text-align: start;
-    padding: 10px 0;
+    padding: 3% 0;
 }
 
 #product1 .pro .description span {
     color: black;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-decoration: solid;
     text-align: center;
 }
 
 #product1 .pro .description h2 {
-    padding-top: 2px;
+    padding-top: 0.5%;
     color: #1a1a1a;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 #product1 .pro .description i {
-    font-size: 16px;
+    font-size: 1rem;
     color: rgb(243, 181, 25);
 }
 
 body {
-    margin: 0px;
+    margin: 0;
 }
 
 .tags_div {
-    padding-bottom: 3px;
+    padding-bottom: 1%;
     display: flex;
-    gap: 5px;
+    gap: 2%;
 }
 
 .tag {
     background-color: rgba(255, 229, 91, 61%);
-    padding: 2px 4px;
+    padding: 0.5% 1%;
     text-align: center;
     color: black;
-    border-radius: 2px;
+    border-radius: 0.125rem;
     font-family: "Poppins";
 }
 
 #product1 .pro .basket {
-    font-size: 36px;
-    color: #ff4d4d; 
+    font-size: 2.25rem;
+    color: #ff4d4d;
     position: absolute;
-    right: 10px;
-    bottom: 20px;
+    right: 3%;
+    bottom: 6%;
     cursor: pointer;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -106,35 +105,42 @@ body {
 
 body {
     background-color: #F7F3EF;
-    margin: 0px;
+    margin: 0;
     cursor: none;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins";
 }
 
 #navbar {
     position: fixed;
-    padding: 30px 50px 0px 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3% 3% 0 3%;
     display: flex;
-    z-index: 1;
+    z-index: 999;
+    justify-items: center;
+    transition: all 300ms ease;
 }
 
 .logo {
-    margin-right: 170px;
-    width: 300px;
-    height: 100px;
+    margin-right: 5%;
+    width: 25%;
+    height: 10vh;
     background-image: url("../images/logo.png");
     background-size: 60%;
     background-repeat: no-repeat;
-    margin-top: 15px;
+    margin-top: 1.5%;
 }
 
 ul {
     display: flex;
-    gap: 70px;
+    gap: 12%;
     justify-content: space-around;
-}
-
-#navbar {
-    transition: all 300ms ease;
 }
 
 #navbar li {
@@ -148,7 +154,7 @@ ul {
     color: black;
     text-decoration: none;
     transition: all 400ms ease;
-    border-radius: 15px;
+    border-radius: 1em;
 }
 
 #navbar a:hover {
@@ -156,28 +162,29 @@ ul {
     padding: 0.86rem 1.51rem;
 }
 
-#con {
+#navbar #con {
     background-color: #ffe55b;
-    padding: 10px 20px;
-    border-radius: 13px;
+    padding: 8%;
+    border-radius: 0.5em;
+    white-space: nowrap;
 }
 
-/*==================================================================*/
+#navbar #con:hover {
+    background-color: white;
+    padding: 0.86em 1.51em;
+  }
+
+/*=============================================*/
 .circle {
-    height: 12px;
-    width: 12px;
-    border-radius: 12px;
+    height: 1em;
+    width: 1em;
+    border-radius: 100%;
     background-color: black;
     position: fixed;
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 99999999; /* so that it stays on top of all other elements */
-}
-
-a {
-    text-decoration: none;
-    color: black;
+    z-index: 99999999;
 }
 
 .image-container {
@@ -191,10 +198,10 @@ a {
     left: 0;
     width: 94%;
     height: 94%;
-    background-color: rgba(255, 255, 255, 0.2); /* Almost transparent white background */
+    background-color: rgba(255, 255, 255, 0.2);
     color: #ffffff;
     text-decoration: solid;
-    padding: 10px;
+    padding: 3%;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     display: flex;
@@ -232,19 +239,19 @@ a {
 }
 
 footer {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 8.125rem;
     background-color: black;
-    padding: 30px;
-    text-align: center;
-    color: white;
 }
 
 .footer {
-    padding: auto 30px;
+    padding: 1% 3%;
     justify-content: center;
     justify-items: center;
-    padding: 30px;
     display: flex;
-    gap: 200px;
+    gap: 15%;
 }
 
 .logos {
@@ -252,8 +259,8 @@ footer {
 }
 
 .logos img {
-    width: 40px;
-    height: 40px;
+    width: 3em;
+    height: 3em;
 }
 
 footer h2 {
@@ -265,48 +272,68 @@ footer h2 {
     text-align: center;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.content {
-    flex: 1;
-}
-
 .Copyright {
-        text-align: center;
-        padding: 15px;
-        margin: 0;
-        font-family: "Poppins";
-        font-size: 15px;
-        color: #ffe55b;
-        background-color: #1f1f1f;
-        line-height: 1.8;
-        letter-spacing: 0.5px;
-      }
+    text-align: center;
+    padding: 1% 0;
+    width: 100%;
+    font-family: "Poppins";
+    font-size: 0.9375em;
+    color: #ffe55b;
+    background-color: #1f1f1f;
+    line-height: 1.8;
+    letter-spacing: 0.03125em;
+    margin: 0;
+}
 
 /* Media Queries for Responsive Design */
-@media (max-width: 1200px) {
+@media screen and (max-width: 1020px) { /* 1200px */
     #product1 .pro {
         width: 30%;
     }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) { /* 992px */
     #product1 .pro {
-        width: 45%;
+        width: 20%;
     }
 }
 
-@media (max-width: 768px) {
-    #product1 .pro {
-        width: 100%;
+@media screen and  (max-width: 768px) { /* 768px */
+    #navbar{
+        padding: 3% 0 0 3%;
+      }
+    .logo{
+      display: none;
     }
+}
 
+@media screen and (max-width: 576px) { /* 576px */
+    .logo{
+        display: none;
+    }
+    #navbar {
+        padding:0%;
+        width: 100%;
+        margin-left: auto;
+    }
+    #navbar a {
+        font-size: 0.7em;
+    }
+    .footer {
+        padding: 5% 0%;
+        gap: 1%;
+        height: 8vh;
+      }
+      footer h2 {
+        font-size: 0.8125em;
+      }
+      .logos img {
+        width: 2em;
+        height: 2em;
+      }
+
+      .sec1{
+        padding: 0%;
+      }
+    
+}
