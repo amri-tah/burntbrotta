@@ -1,69 +1,6 @@
 *{
-  scroll-behavior: smooth;
   cursor: none;
 }
-body {
-  background-color: #F7F3EF;
-  margin: 0px;
-}
-
-#navbar{
-    position: fixed;
-    padding: 30px 50px 0px 70px;
-    display: flex;
-    max-width: 100%;
-}
-
-.logo{
-  margin-right: 170px;
-  width: 300px;
-  height: 100px;
-  background-image: url("../images/logo.png");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  margin-top: 15px;
-}
-
-ul{
-    display: flex;
-    gap:70px;
-    justify-content: space-around;
-}
-#navbar{
-  transition: all 300ms ease;
-}
-
-#navbar li{
-    list-style: none;
-}
-
-#navbar a{
-    font-weight: 600;
-    font-size: 1.5rem;
-    font-family: 'Poppins';
-    color: black;
-    text-decoration: none;
-}
-
-#con{
-    background-color: #ffe55b;
-    padding: 10px 20px;
-    border-radius: 13px;
-}
-/*==================================================================*/
-  .circle {
-    height: 12px;
-    width: 12px;
-    border-radius: 12px;
-    background-color: black;
-    position: fixed;
-  
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 99999999; /* so that it stays on top of all other elements */
-  }
-/*==================================================================*/
   .main_wrapper {
     background-color: #ffe55b;
     padding: 0px 0px 10px 0px;
@@ -253,99 +190,50 @@ ul{
   width: 280px;
 }
 /*==================================================*/
-.contactus{
-  margin: 10px 0px 0px 0px;
-  padding:100px 200px;
+.contactus {
+  margin: 1% 0 0 0;    /* Changed from fixed pixels */
+  padding: 5% 36%;    /* Already in percentage */
   background-color: #ffe55b;
 }
-.formel{
-  padding: 100px auto;
+
+.formel {
   display: flex;
-  gap:40px;
+  gap: 3%;            /* Changed from 40px to percentage */
 }
 
-input{
+input {
   font-family: "Poppins";
   font-size: 1rem;
-  margin: 10px;
-  width:100%;
-  height: 40px;
-  padding: 2px 30px;
+  margin: 2%;
+  height: 2.5em;      /* Changed to em for scalability */
+  padding: 0.5% 25%;   /* Changed to percentage */
   border: 0;
 }
 
-textarea{
-  margin: 10px;
-  width:93%;
-  
+textarea {
+  margin: 2%;         /* Changed from fixed pixels */
+  width: 100%;        /* Adjusted to account for padding */
   font-size: 1rem;
   font-family: "Poppins";
-  height: 140px;
-  padding: 12px 30px;
+  height: 8em;       /* Changed to em for scalability */
+  padding: 1% 3%;    /* Changed to percentage */
   border: 0;
 }
 
-input[type="submit"]{
-  width: 30%;
+input[type="submit"] {
+  width: 50%;        /* Already in percentage */
   background-color: black;
   color: white;
   border: 0;
-  padding:10px 20px;
+  padding: 1% 2%;    /* Changed to percentage */
   font-family: "Poppins";
   font-size: 1rem;
   font-weight: 300;
-  margin:10px;
+  margin: 2%;        /* Changed from fixed pixels */
   border-radius: 5px;
 }
 
-.mess{
-  width: 100%;
- margin: 0px auto; 
-}
-/*==================================================*/
-footer{
-  width:100%;
-  height: 130px;
-  cursor: pointer;
-  background-color: black;
-}
-.footer{
-  padding: auto 30px;
-  justify-content: center;
-  justify-items: center;
-  padding:30px;
-  display: flex;
-  gap:200px;
-}
-
-.logos{
-  
-  display: flex;
-}
-.logos img{
-  width:40px;
-  height:40px;
-}
-
-footer h2{
-  font-size: 1rem;
-  color:white;
-   font-family: "Poppins"; 
-   font-weight: 200;
-    margin: 0; 
-    text-align: center;
-}
-
-/*==================================================*/
-
-.Copyright {
-  text-align: center;
-  padding: 15px;
-  margin: 0;
-  font-family: "Poppins";
-  font-size: 15px;
-  color: #ffe55b;
-  background-color: #1f1f1f;
-  line-height: 1.8;
-  letter-spacing: 0.5px;
-}
+.mess {
+  width: 100%;      /* Already in percentage */
+  margin: 0 auto;   /* Changed from fixed pixels */
+}/*==================================================*/
