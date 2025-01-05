@@ -14,7 +14,7 @@
 #headline {
   width: 30%;
   min-width: 400px;
-  height: 700px;
+  height: 500px;
 }
 
 #headline h1 {
@@ -37,9 +37,14 @@
 
 .rec1, .rec2, .rec3, .rec4, .rec5, .rec6 {
   width: 400px;
-  height: 700px;
+  height: 500px;
+  padding-top: 5%;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+#recipe-image{
+  height: 450px;
 }
 
 .tags_div {
@@ -230,8 +235,8 @@ input {
   }
   
   #recipe-image{
-    width:100%;
-    height: 75%;
+    width:50%;
+    height:50%;
   }
   
   #headline {
@@ -272,8 +277,9 @@ input {
     flex-direction: column;
   }
 
-  .Ingredients h1, .directions h1 {
+  .headdesc,.Ingredients h1, .directions h1 {
     font-size: 1.5rem;
+    font-weight: bold;
   }
 
   #msg {
@@ -340,8 +346,13 @@ input {
 
   
   #recipe-image{
-    width:100%;
+    width:60%;
     height: 75%;
+  }
+
+  .rec1, .rec2, .rec3, .rec4, .rec5, .rec6 {
+    width: 100%;
+    height: auto;
   }
 
   #headline h1 {
