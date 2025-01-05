@@ -87,7 +87,7 @@ ul {
 
 #wrapper {
   margin: 0;
-  padding: 15% 8% 50% 10%;
+  padding: 200px;
   padding-bottom: 0;
   font-family: "Poppins";
 }
@@ -293,8 +293,8 @@ input {
 }
 
 footer {
-  width: 100vw;
-  max-width: 100vw;
+  max-width: 100%;
+  width: 100%;
   height: auto;
   background-color: black;
   margin-top: auto;
@@ -302,8 +302,6 @@ footer {
 }
 
 .footer {
-  width: 100vw;
-  max-width: 100vw;
   padding: 1% 3%;
   justify-content: center;
   display: flex;
@@ -344,3 +342,170 @@ footer h2 {
   margin: 0;
 }
 
+@media screen and (max-width:1024px) {
+    #wrapper {
+      padding: 120px 95px;
+    }
+
+    #navbar .logo{
+      margin-right:0%;
+    }
+}
+
+@media (max-width: 768px) {
+  /* Styles for screen width 768px or less */
+  #navbar{
+    padding:3% 0%;
+  }
+  .logo{
+    display: none;
+  }
+  #wrapper {
+    padding: 120px 100px;
+  }
+  #imganddesc {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  #headline {
+    width: 100%;
+    min-width: unset;
+    height: auto;
+  }
+
+  #headline h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .headdesc {
+    font-size: 1.5rem;
+    padding:5% 0%;
+  }
+
+  .desc {
+    font-size: 0.9rem;
+  }
+
+  .rec1, .rec2, .rec3, .rec4, .rec5, .rec6 {
+    width: 100%;
+    height: auto;
+  }
+
+  .tags_div {
+    flex-wrap: wrap;
+    padding-left: 0%;
+  }
+
+  .tag {
+    max-width: 50%;
+  }
+
+  .ingredndirect {
+    flex-direction: column;
+  }
+
+  .Ingredients h1, .directions h1 {
+    font-size: 1.5rem;
+  }
+
+  #msg {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .comment {
+    font-size: 1rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    text-indent: 1%;
+  }
+
+  .namenmail {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .namenmail input {
+    width: 100%;
+  }
+
+  .reviewncomment h1 {
+    font-size: 1.5rem;
+  }
+
+  .reviewncomment h3 {
+    font-size: 0.9rem;
+  }
+
+  .review {
+    align-items: center;
+  }
+
+  .button {
+    width: 20%;
+  }
+
+  .quote {
+    font-size: 1.2rem;
+  }
+
+  .error-messages {
+    font-size: 0.8rem;
+  }
+
+  #toast {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .logo{
+    display: none;
+  }
+  #navbar {
+    padding:0%;
+    width: 100%;
+  }
+  .menu ul{
+    gap: 10%;
+  }
+  #navbar a {
+    font-size: 0.8em;
+  }
+  #wrapper{
+    padding:20% 3% 20% 5%;
+  }
+  .footer {
+    padding: 5% 0%;
+    gap: 3%;
+    height: 8vh;
+    width: 100%;    
+
+  }
+  footer {
+    padding: 1%;
+    position: relative;
+  }
+  footer h2 {
+      font-size: 0.8125em;
+  }
+  .logos img {
+    width: 2em;
+    height: 2em;
+  }
+.button{
+  margin: 0% 40%;
+}
+
+  .Copyright{
+    padding:1.5% 0%;
+  }
+}
