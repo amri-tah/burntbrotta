@@ -2,6 +2,8 @@
   cursor: none;
 }
   .main_wrapper {
+    box-sizing: border-box;
+    width: 100%;
     background-color: #ffe55b;
     padding: 0px 0px 10px 0px;
   }
@@ -35,6 +37,7 @@
   }
   .menu2 a,.menu a {
     text-decoration: none;
+    white-space: nowrap;
     color: black;
     font-family: "Poppins";
     transition: all 400ms ease;
@@ -84,16 +87,16 @@
 /*==================================================*/
   .hero_section1 {
     height: 100%;
+    width: 100%;
     color: black;
     display: flex;
-    padding: 140px 20px;
+    padding: 80px 0px 0px 10px;
     margin: 0px 20px;
     
   }
 
   .hero1{
-    margin: auto;
-    padding: 80px;
+    margin:2% 0% 2% 2%;
   }
   .hero1 h1,.contactus h1, .popularrec h1{
     font-family: 'Poppins';
@@ -191,42 +194,50 @@
 }
 /*==================================================*/
 .contactus {
-  margin: 1% 0 0 0;    /* Changed from fixed pixels */
-  padding: 5% 36%;    /* Already in percentage */
+  margin: 1% 0 0 0; /* Keep the margin as is */
+  padding:8% 15%;    /* Use fixed padding for consistency */
+  width: 100%;      /* Make the section take full width */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
   background-color: #ffe55b;
+}
+
+.contactus h1{
+  margin-left: 2%;
 }
 
 .formel {
   display: flex;
-  gap: 3%;            /* Changed from 40px to percentage */
+  width: 100%;        /* Already in percentage */
+}
+
+input, textarea {
+  font-family: "Poppins";
+  font-size: 1.2rem;
+  margin: 1% 2%;
+  padding: 1% 1%; /* Unified padding */
+  border: 0;
+  width: calc(100% - 4%); /* Unified width calculation to account for margin */
+  box-sizing: border-box; /* Include padding and border in the element’s total width */
 }
 
 input {
-  font-family: "Poppins";
-  font-size: 1rem;
-  margin: 2%;
-  height: 2.5em;      /* Changed to em for scalability */
-  padding: 0.5% 25%;   /* Changed to percentage */
-  border: 0;
+  height: 2.5em; /* You can adjust this value as needed */
 }
 
 textarea {
-  margin: 2%;         /* Changed from fixed pixels */
-  width: 100%;        /* Adjusted to account for padding */
-  font-size: 1rem;
-  font-family: "Poppins";
-  height: 8em;       /* Changed to em for scalability */
-  padding: 1% 3%;    /* Changed to percentage */
-  border: 0;
+  height: 8em; /* Adjusted for scalability */
 }
 
+
 input[type="submit"] {
-  width: 50%;        /* Already in percentage */
+  width: 25%;        /* Already in percentage */
+  height:3rem;       /* Changed to em for scalability */
   background-color: black;
   color: white;
   border: 0;
-  padding: 1% 2%;    /* Changed to percentage */
+  padding: 1% 7%;
   font-family: "Poppins";
+  align-items: center;
   font-size: 1rem;
   font-weight: 300;
   margin: 2%;        /* Changed from fixed pixels */
@@ -237,3 +248,123 @@ input[type="submit"] {
   width: 100%;      /* Already in percentage */
   margin: 0 auto;   /* Changed from fixed pixels */
 }/*==================================================*/
+
+@media screen and (max-width:1024px) {
+  .hero_section1{
+    margin: 0px;
+  }
+  .hero_section2{
+    padding:10%;
+  }
+  .popularrec{
+    padding: 50px;
+  }
+  .main_div h1{
+    padding: 150px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .main_div h1{
+    padding:50px 10px;
+    font-size: 5rem;
+  }
+  .hero_section1{
+    padding-left: 0%;
+  }
+  .hero_section2{
+    padding:5%;
+  }
+  .viewmore{
+    padding-left: 37%;
+  }
+  .img1{
+    height: auto;
+  }
+  input[type="submit"] {
+    font-size: 1rem;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .main_div h1{
+    padding:50px 10px;
+    font-size: 2.5rem;
+  }
+  .menu2{
+    gap: 15px;
+    font-size: 0.75rem;
+  }
+  .hero_section1 {
+    display: flex;
+    flex-direction: column; /* Stacks child elements in a column */
+  }
+  
+  .hero_section1 .hero1,
+  .hero_section1 .img1 {
+    width: 100%; /* Ensures elements take full width of the parent */
+  }
+  
+  .hero_section1 .img1 {
+    min-height: 275px; /* Ensures the element is visible */
+    background-color: #ccc; /* Placeholder background color to make it visible */
+  }
+
+  .hero1{
+    margin: 0%;
+  }
+
+  .hero1 h1{
+    font-size: 2rem;
+    margin-bottom: 1%;
+  }
+
+  .hero1 h3, .hero2 h3{
+    font-size: 1.5rem;
+  }
+  .popularrec h1{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .hero_section2{
+    padding:5%;
+  }
+  .cards{
+    padding: 30px;
+  }
+  .popularrec a[href$="id=1"],
+  .popularrec a[href$="id=6"] {
+    display: none;
+  }
+
+  .viewmore{
+    padding-left:20%;
+    white-space: nowrap;
+  }
+  .contactus h1{
+    font-size: 1.5rem;
+  }
+  .formel{
+    margin: 1% 0%;
+  }
+  input{
+    height: 2em;
+    font-size: 0.75rem;
+  }
+  .img1{
+    height: auto;
+  }
+  .img2{
+    margin: 0%;
+  }
+  textarea {
+    height: 4em;
+    font-size: 0.75rem;
+  }
+  input[type="submit"] {
+    font-size: 0.75rem;
+    width: 50%;
+    height: 2rem;
+  }
+}
