@@ -30,9 +30,9 @@ body {
 }
 
 .logo {
-    margin-right: 8%;
-    width: 20%;
-    height: 10vh;
+    margin-right: 10%;
+    width: 25%;
+    height: 12vh;
     background-image: url("../images/logo.png");
     background-size: 60%;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@ ul {
 
 #navbar a {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     font-family: "Poppins";
     color: black;
     text-decoration: none;
@@ -162,6 +162,13 @@ footer h2 {
     .logo{
         margin-right:0%;
         width: 20%;
+    }
+    #navbar {
+        padding: 3% 0% 0 1%;
+    }
+    #navbar ul{
+        padding: 0%;
+        gap: 10%;
     }
     footer{
         height: 6rem;
