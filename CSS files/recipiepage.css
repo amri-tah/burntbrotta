@@ -48,6 +48,10 @@
   height: 450px;
 }
 
+#recipe-name {
+  margin:10% 0% 0% 0%;  
+}
+
 .tags_div {
   padding: 2% 0%;
   display: flex;
@@ -351,10 +355,6 @@ input {
     object-fit: cover;
     width:100%;
     height: 75%;
-  }
-
-  #recipe-name {
-      margin: 0%;  
   }
 
   .rec1, .rec2, .rec3, .rec4, .rec5, .rec6 {
