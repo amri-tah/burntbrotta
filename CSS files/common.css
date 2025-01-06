@@ -342,7 +342,7 @@ footer h2 {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
-        padding: 0% 10% 0% 10%;
+        padding: 0% 10% 0% 5%;
     }
     
 
@@ -386,7 +386,7 @@ footer h2 {
     }
 
     #menu-bar.active span:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+        transform: translateY(10px) rotate(45deg);
     }
 
     #menu-bar.active span:nth-child(2) {
