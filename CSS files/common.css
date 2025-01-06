@@ -29,7 +29,7 @@ body {
 }
 
 .logo {
-    margin-right: 3%;
+    margin-right: 8%;
     width: 20%;
     height: 10vh;
     background-image: url("../images/logo.png");
@@ -177,9 +177,11 @@ footer h2 {
       }
     .logo{
         margin-right:0%;
-        width: 20%;    }
+        width: 20%; 
+        background-size: 100%;
+    }
     .menu ul{
-        gap: 10%;
+        gap: 6%;
         padding-left: 10%;
     }
 }
@@ -188,15 +190,21 @@ footer h2 {
 @media screen and (max-width: 576px){
     .logo{
         margin:7% 50% 5% 10%;
-        width: 40%;
+        width: 50%;
         transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        background-size: 100%;
     }
+    
     #navbar {
     padding:0%;
     width: 100%;
     margin: 0%;
     }
 
+    #navbar #con {
+        background-color: transparent;
+    }    
+    
     .logo.hide{
         opacity: 0;
         display: none;
@@ -250,31 +258,29 @@ footer h2 {
     }
 
     /* X Animation */
-#menu-bar span:nth-child(1) {
-    transform: translateY(0) rotate(0deg);
-}
+    #menu-bar span:nth-child(1) {
+        transform: translateY(0) rotate(0deg);
+    }
 
-#menu-bar span:nth-child(2) {
-    opacity: 1;
-}
+    #menu-bar span:nth-child(2) {
+        opacity: 1;
+    }
 
-#menu-bar span:nth-child(3) {
-    transform: translateY(0) rotate(0deg);
-}
+    #menu-bar span:nth-child(3) {
+        transform: translateY(0) rotate(0deg);
+    }
 
-#menu-bar.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
+    #menu-bar.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
 
-#menu-bar.active span:nth-child(2) {
-    opacity: 0;
-}
+    #menu-bar.active span:nth-child(2) {
+        opacity: 0;
+    }
 
-#menu-bar.active span:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg);
-}
-
-
+    #menu-bar.active span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
 
     #menu-bar {
         display: flex;
@@ -296,7 +302,7 @@ footer h2 {
         margin-top: 10%;
     }
     #navbar a {
-    font-size: 0.7em;
+    font-size: 1.5em;
     }
     .footer {
     padding: 5% 0%;
