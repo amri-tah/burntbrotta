@@ -249,11 +249,12 @@ input {
   #headline h1 {
     font-size: 3rem;
     line-height: 3rem;
+    margin: 0%;
   }
 
   .headdesc {
     font-size: 1.5rem;
-    padding:5% 0%;
+    padding:3% 0%;
   }
 
   .desc {
@@ -267,7 +268,7 @@ input {
 
   .tags_div {
     flex-wrap: wrap;
-    padding-left: 0%;
+    padding: 0%;
   }
 
   .tag {

@@ -91,9 +91,11 @@ menuBar.addEventListener('click', () => {
 
 // Hide menu when clicking outside its area
 document.addEventListener('click', (event) => {
-    // Check if the click is outside the menu and the menu bar
-    if (!menu.contains(event.target) && !menuBar.contains(event.target)) {
-        hideMenu();
-        menuBar.classList.toggle('active');
+    if (menu.classList.contains('active')) {
+        // Check if the click is outside the menu and the menu bar
+        if (!menu.contains(event.target) && !menuBar.contains(event.target)) {
+            hideMenu();
+            menuBar.classList.toggle('active');
+        }
     }
 });

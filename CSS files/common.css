@@ -171,18 +171,114 @@ footer h2 {
 }
 
 /* Styles for screen width 768px or less */
-@media screen and (max-width: 768px){
-    #navbar{
-        padding: 2% 0 0 1%;
-      }
-    .logo{
-        margin-right:0%;
-        width: 20%; 
+@media screen and (max-width: 768px) {
+    #navbar {
+        padding: 0% 0 0 1%;
+    }
+    
+    .logo {
+        margin: 7% 0 5% 10%;
+        width: 30%;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
         background-size: 100%;
     }
-    .menu ul{
-        gap: 6%;
-        padding-left: 10%;
+
+    #navbar #con {
+        background-color: transparent;
+    }    
+    
+    .logo.hide{
+        opacity: 0;
+        display: none;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #FFE135;
+        padding: 0% 6%;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .menu.hiding { /* Add this new class for hiding animation */
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15%;
+        padding-left: 0%;
+        margin: 3% 0%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+    }
+
+    /* X Animation */
+    #menu-bar span:nth-child(1) {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    #menu-bar span:nth-child(2) {
+        opacity: 1;
+    }
+
+    #menu-bar span:nth-child(3) {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    #menu-bar.active span:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    #menu-bar.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-bar.active span:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    #menu-bar {
+        display: flex;
+        margin-top: 9%;
+        position: absolute;
+        right: 3%;
+        transition: all 0.3s ease-in-out;
+        opacity: 1;
+        visibility: visible;
+        transform-origin: center;
+    }
+    #menu-bar span {
+        height: 5px;
+        width: 40px;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transform-origin: center; /* Add this to keep transformation in place */
+    }
+    #menu-bar.active {
+        right: 3%;
+        position:absolute;
+        margin-top: 8%;
     }
 }
 
@@ -250,7 +346,6 @@ footer h2 {
         text-decoration: none;
         color: black;
         font-size: 1.2rem;
-        /* transition: color 0.3s ease; */
     }
 
     .menu ul:hover {
@@ -284,7 +379,7 @@ footer h2 {
 
     #menu-bar {
         display: flex;
-        margin-top: 7%;
+        margin-top: 9%;
         position: absolute;
         right: 3%;
         transition: all 0.3s ease-in-out;
