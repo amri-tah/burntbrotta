@@ -65,14 +65,15 @@ const menuBar = document.getElementById('menu-bar');
 const menu = document.querySelector('.menu');
 const logo = document.querySelector('.logo');
 
-// Function to hide the menu
+// Function to hide the menu and reset menu bar
 function hideMenu() {
     if (menu.classList.contains('active')) {
         menu.classList.add('hiding');
         setTimeout(() => {
             menu.classList.remove('active');
             menu.classList.remove('hiding');
-            logo.classList.toggle('hide'); // Toggle logo visibility after hiding animation
+            logo.classList.remove('hide'); // Explicitly show the logo
+            menuBar.classList.remove('active'); // Add this line to reset menu bar
         }, 300);
     }
 }
@@ -84,18 +85,22 @@ menuBar.addEventListener('click', () => {
     } else {
         menu.classList.add('active');
         logo.classList.add('hide');
+        menuBar.classList.add('active');
     }
-    menuBar.classList.toggle('active');
-
 });
 
 // Hide menu when clicking outside its area
 document.addEventListener('click', (event) => {
     if (menu.classList.contains('active')) {
-        // Check if the click is outside the menu and the menu bar
         if (!menu.contains(event.target) && !menuBar.contains(event.target)) {
             hideMenu();
-            menuBar.classList.toggle('active');
         }
+    }
+});
+
+// Hide menu when scrolling
+document.addEventListener('scroll', () => {
+    if (menu.classList.contains('active')) {
+        hideMenu();
     }
 });

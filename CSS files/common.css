@@ -1,6 +1,7 @@
 
 * {
     scroll-behavior: smooth;
+    cursor: none;
 }
 
 body {
@@ -175,6 +176,11 @@ footer h2 {
     #navbar {
         padding: 0% 0 0 1%;
     }
+
+    #navbar a:hover {
+        background-color: white;
+        padding: 0.43rem 1rem;
+    }    
     
     .logo {
         margin: 7% 0 5% 10%;
@@ -300,6 +306,11 @@ footer h2 {
     #navbar #con {
         background-color: transparent;
     }    
+
+    #navbar a:hover {
+        background-color: white;
+        padding: 0.43rem 1rem;
+    }    
     
     .logo.hide{
         opacity: 0;
@@ -313,10 +324,10 @@ footer h2 {
         left: 0;
         width: 100%;
         background-color: #FFE135;
-        padding: 0% 6%;
+        padding: 0%;
         opacity: 0;
         visibility: hidden;
-        transform: translateY(-20px);
+        transform: translateY(-100%);
         transition: all 0.3s ease-in-out;
     }
 
@@ -324,10 +335,12 @@ footer h2 {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
+        padding: 0% 10% 0% 10%;
     }
+    
 
     .menu.hiding { /* Add this new class for hiding animation */
-        transform: translateY(-20px);
+        transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease-in-out;
