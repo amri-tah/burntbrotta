@@ -59,3 +59,41 @@ if(scrollTop>lastScrollTop){
 }
 lastScrollTop = scrollTop;
 })
+
+// JS code for menu bar
+const menuBar = document.getElementById('menu-bar');
+const menu = document.querySelector('.menu');
+const logo = document.querySelector('.logo');
+
+// Function to hide the menu
+function hideMenu() {
+    if (menu.classList.contains('active')) {
+        menu.classList.add('hiding');
+        setTimeout(() => {
+            menu.classList.remove('active');
+            menu.classList.remove('hiding');
+            logo.classList.toggle('hide'); // Toggle logo visibility after hiding animation
+        }, 300);
+    }
+}
+
+// Toggle menu visibility on menu bar click
+menuBar.addEventListener('click', () => {
+    if (menu.classList.contains('active')) {
+        hideMenu();
+    } else {
+        menu.classList.add('active');
+        logo.classList.add('hide');
+    }
+    menuBar.classList.toggle('active');
+
+});
+
+// Hide menu when clicking outside its area
+document.addEventListener('click', (event) => {
+    // Check if the click is outside the menu and the menu bar
+    if (!menu.contains(event.target) && !menuBar.contains(event.target)) {
+        hideMenu();
+        menuBar.classList.toggle('active');
+    }
+});

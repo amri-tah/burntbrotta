@@ -42,6 +42,7 @@ ul {
     display: flex;
     gap: 12%;
     justify-content: space-around;
+
 }
 
 #navbar li {
@@ -74,6 +75,21 @@ ul {
 #navbar #con:hover {
     background-color: white;
     padding: 0.86em 1.51em;
+}
+#menu-bar {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+#menu-bar span {
+    width: 30px;
+    height: 4px;
+    border-radius: 25px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .circle {
@@ -160,8 +176,8 @@ footer h2 {
         padding: 2% 0 0 1%;
       }
     .logo{
-      display: none;
-    }
+        margin-right:0%;
+        width: 20%;    }
     .menu ul{
         gap: 10%;
         padding-left: 10%;
@@ -171,16 +187,113 @@ footer h2 {
 /* Styles for screen width 576px or less */
 @media screen and (max-width: 576px){
     .logo{
-        display: none;
+        margin:7% 50% 5% 10%;
+        width: 40%;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     }
     #navbar {
     padding:0%;
     width: 100%;
     margin: 0%;
     }
-    .menu ul{
-    gap: 10%;
-    padding-left: 20%;
+
+    .logo.hide{
+        opacity: 0;
+        display: none;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #FFE135;
+        padding: 0% 6%;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .menu.hiding { /* Add this new class for hiding animation */
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12%;
+        padding-left: 0%;
+        margin: 5% 0%;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2rem;
+        /* transition: color 0.3s ease; */
+    }
+
+    .menu ul:hover {
+        color: #555;
+    }
+
+    /* X Animation */
+#menu-bar span:nth-child(1) {
+    transform: translateY(0) rotate(0deg);
+}
+
+#menu-bar span:nth-child(2) {
+    opacity: 1;
+}
+
+#menu-bar span:nth-child(3) {
+    transform: translateY(0) rotate(0deg);
+}
+
+#menu-bar.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#menu-bar.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-bar.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+
+
+    #menu-bar {
+        display: flex;
+        margin-top: 7%;
+        position: absolute;
+        right: 3%;
+        transition: all 0.3s ease-in-out;
+        opacity: 1;
+        visibility: visible;
+        transform-origin: center;
+    }
+    #menu-bar span {
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        transform-origin: center; /* Add this to keep transformation in place */
+    }
+    #menu-bar.active {
+        right: 3%;
+        position:absolute;
+        margin-top: 10%;
     }
     #navbar a {
     font-size: 0.7em;
