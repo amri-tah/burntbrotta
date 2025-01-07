@@ -1,70 +1,9 @@
 *{
-  scroll-behavior: smooth;
   cursor: none;
 }
-body {
-  background-color: #F7F3EF;
-  margin: 0px;
-}
-
-#navbar{
-    position: fixed;
-    padding: 30px 50px 0px 70px;
-    display: flex;
-    max-width: 100%;
-}
-
-.logo{
-  margin-right: 170px;
-  width: 300px;
-  height: 100px;
-  background-image: url("../images/logo.png");
-  background-size: 60%;
-  background-repeat: no-repeat;
-  margin-top: 15px;
-}
-
-ul{
-    display: flex;
-    gap:70px;
-    justify-content: space-around;
-}
-#navbar{
-  transition: all 300ms ease;
-}
-
-#navbar li{
-    list-style: none;
-}
-
-#navbar a{
-    font-weight: 600;
-    font-size: 1.5rem;
-    font-family: 'Poppins';
-    color: black;
-    text-decoration: none;
-}
-
-#con{
-    background-color: #ffe55b;
-    padding: 10px 20px;
-    border-radius: 13px;
-}
-/*==================================================================*/
-  .circle {
-    height: 12px;
-    width: 12px;
-    border-radius: 12px;
-    background-color: black;
-    position: fixed;
-  
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    z-index: 99999999; /* so that it stays on top of all other elements */
-  }
-/*==================================================================*/
   .main_wrapper {
+    box-sizing: border-box;
+    width: 100%;
     background-color: #ffe55b;
     padding: 0px 0px 10px 0px;
   }
@@ -98,6 +37,7 @@ ul{
   }
   .menu2 a,.menu a {
     text-decoration: none;
+    white-space: nowrap;
     color: black;
     font-family: "Poppins";
     transition: all 400ms ease;
@@ -147,30 +87,32 @@ ul{
 /*==================================================*/
   .hero_section1 {
     height: 100%;
+    width: 100%;
     color: black;
     display: flex;
-    padding: 140px 20px;
+    padding: 80px 0px 0px 0px;
     margin: 0px 20px;
     
   }
 
   .hero1{
-    margin: auto;
-    padding: 80px;
+    margin:2% 0% 2% 0%;
+    padding:5% 4%;
   }
   .hero1 h1,.contactus h1, .popularrec h1{
     font-family: 'Poppins';
     font-size: 3.5rem;
     line-height: 90%;
     font-weight: bold;
-    margin: 0;
+    margin: 1px;
   }
+
   .hero1 h3, .hero2 h3{
     font-family: 'Poppins';
     font-size: 2rem;
     line-height: 100%;
     font-weight: 400;
-    margin: 0px;
+    margin: 1px;
 
   }
 /*==================================================*/
@@ -202,7 +144,7 @@ ul{
 .viewmore{
   width:50%;
   max-width:50%;
-  padding-left:45%;
+  padding-left:42%;
 }
 .viewmore a{
   margin:0px;
@@ -223,7 +165,7 @@ ul{
 }
 /*==================================================*/
   .hero_section2{
-    padding: 40px 30%;
+    padding: 40px 25%;
   }
   .hero2 h3{
     font-size: 2.3rem;
@@ -233,7 +175,7 @@ ul{
 
 .img1{
   height:500px;
-  width: 100%;
+  width: 75%;
   background-image: url("../images/landing/cooking.png");
   max-width: 100%;
   background-size: 100%;
@@ -253,99 +195,192 @@ ul{
   width: 280px;
 }
 /*==================================================*/
-.contactus{
-  margin: 10px 0px 0px 0px;
-  padding:100px 200px;
+.contactus {
+  margin: 1% 0 0 0; 
+  padding:8% 15%;    
+  width: 100%;      
+  box-sizing: border-box; 
   background-color: #ffe55b;
 }
-.formel{
-  padding: 100px auto;
+
+.contactus h1{
+  margin-left: 2%;
+}
+
+.formel {
   display: flex;
-  gap:40px;
+  width: 100%;     
 }
 
-input{
+input, textarea {
   font-family: "Poppins";
-  font-size: 1rem;
-  margin: 10px;
-  width:100%;
-  height: 40px;
-  padding: 2px 30px;
+  font-size: 1.2rem;
+  margin: 1% 2%;
+  padding: 1% 1%; 
   border: 0;
+  width: calc(100% - 4%); 
+  box-sizing: border-box; 
 }
 
-textarea{
-  margin: 10px;
-  width:93%;
-  
-  font-size: 1rem;
-  font-family: "Poppins";
-  height: 140px;
-  padding: 12px 30px;
-  border: 0;
+input {
+  height: 2.5em; 
 }
 
-input[type="submit"]{
-  width: 30%;
+textarea {
+  height: 8em; 
+}
+
+
+input[type="submit"] {
+  width: 25%;        
+  height:3rem;       
   background-color: black;
   color: white;
   border: 0;
-  padding:10px 20px;
+  padding: 1% 7%;
   font-family: "Poppins";
+  align-items: center;
   font-size: 1rem;
   font-weight: 300;
-  margin:10px;
+  margin: 2%;      
   border-radius: 5px;
 }
 
-.mess{
-  width: 100%;
- margin: 0px auto; 
-}
-/*==================================================*/
-footer{
-  width:100%;
-  height: 130px;
-  cursor: pointer;
-  background-color: black;
-}
-.footer{
-  padding: auto 30px;
-  justify-content: center;
-  justify-items: center;
-  padding:30px;
-  display: flex;
-  gap:200px;
+.mess {
+  width: 100%;     
+  margin: 0 auto;  
+}/*==================================================*/
+
+@media screen and (max-width:1024px) {
+  .hero_section1{
+    margin: 0px;
+  }
+  .hero_section2{
+    padding:10%;
+  }
+  .popularrec{
+    padding: 50px;
+  }
+  .main_div h1{
+    padding: 150px;
+  }
 }
 
-.logos{
+@media screen and (max-width:768px) {
+  .main_wrapper{
+    padding-top:15% ;
+  }
+  .main_div h1{
+    padding:50px 10px;
+    font-size: 5rem;
+  }
+  .hero_section1{
+    padding-left: 0%;
+  }
+  .hero_section2{
+    padding:5%;
+  }
+  .viewmore{
+    padding-left: 37%;
+  }
+  .img1{
+    height: auto;
+  }
+  input[type="submit"] {
+    font-size: 1rem;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .main_wrapper{
+    padding-top:50% ;
+  }
+  .main_div h1{
+    padding:50px 10px;
+    font-size: 2.5rem;
+  }
+  .menu2{
+    gap: 15px;
+    font-size: 0.75rem;
+  }
+  .hero_section1 {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column; /* Stacks child elements in a column */
+  }
   
-  display: flex;
-}
-.logos img{
-  width:40px;
-  height:40px;
-}
+  .hero_section1 .img1 {
+    min-height: 200px; 
+    background-color: #ccc; 
+    margin:0% 15%;
+  }
 
-footer h2{
-  font-size: 1rem;
-  color:white;
-   font-family: "Poppins"; 
-   font-weight: 200;
-    margin: 0; 
+  .hero1 h1{
+    font-size: 1.2rem;
+    margin: 1% 0%;
+    max-width: fit-content;
+  }
+  .hero1 h3{
+    margin: 1px 0px;
+  }
+
+  .hero1 h3, .hero2 h3{
+    font-size: 1.5rem;
+    max-width: fit-content;
+  }
+  .popularrec{
+    padding: 0%;
+  }
+  .popularrec h1{
+    margin: 5% 0% 1% 0%;
+    font-size: 1.5rem;
     text-align: center;
-}
+  }
+  .popularrec img{
+    max-width: 275px;
+  }
+  .hero_section1 .hero1{
+    padding:3% 10%;
+  }
+  .hero_section2{
+    padding:10% 0%;
+  }
+  .cards{
+    padding: 20px;
+  }
+  .popularrec a[href$="id=1"],
+  .popularrec a[href$="id=6"] {
+    display: none;
+  }
 
-/*==================================================*/
-
-.Copyright {
-  text-align: center;
-  padding: 15px;
-  margin: 0;
-  font-family: "Poppins";
-  font-size: 15px;
-  color: #ffe55b;
-  background-color: #1f1f1f;
-  line-height: 1.8;
-  letter-spacing: 0.5px;
+  .viewmore{
+    padding:0% 22%;
+    white-space: nowrap;
+  }
+  .contactus h1{
+    font-size: 1.5rem;
+  }
+  .formel{
+    margin: 1% 0%;
+  }
+  input{
+    height: 2em;
+    font-size: 0.75rem;
+  }
+  .img1{
+    height: auto;
+  }
+  .img2{
+    margin: 0%;
+  }
+  textarea {
+    height: 4em;
+    font-size: 0.75rem;
+  }
+  input[type="submit"] {
+    font-size: 0.75rem;
+    width: 50%;
+    height: 2rem;
+  }
 }
