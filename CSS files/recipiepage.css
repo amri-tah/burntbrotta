@@ -140,8 +140,7 @@ input {
 }
 
 .no-reviews-message {
-  text-align: center;
-  font-size: 18px; 
+  font-size: 16px; 
   font-style: italic;
   color: gray;
   padding-bottom: 10px;
