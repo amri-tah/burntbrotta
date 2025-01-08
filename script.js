@@ -53,7 +53,7 @@ window.onload = function () {
                       <div class="review-stars-and-date">
                         <p class="review-stars">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</p>
                         <span class="review-stars-seperator">·</span>
-                        <p class="review-date">Reviewed on ${new Date(review.postedAt).toLocaleDateString()} at ${new Date(review.postedAt).toLocaleTimeString()}</p>
+                        <p class="review-date">Reviewed on ${new Date(review.postedAt).toLocaleDateString('en-IN')} at ${new Date(review.postedAt).toLocaleTimeString()}</p>
                       </div>
                     </div>
                   </div>
