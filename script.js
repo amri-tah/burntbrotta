@@ -33,6 +33,40 @@ window.onload = function () {
           li.innerHTML = `${instruction}<br><br>`;
           instructionsList.appendChild(li);
         });
+
+        const renderReviews = () => {
+          const container = document.getElementById("reviews-container");
+          container.innerHTML = "";
+          if (recipe.reviews.user_reviews.length === 0) {
+            container.innerHTML = `
+              <div class="no-reviews-message">
+                  <p>No reviews yet! Be the first to add one...</p>
+              </div>`;
+          } else {
+            recipe.reviews.user_reviews.forEach((review) => {
+              const reviewHTML = `
+                <div class="review-item">
+                  <div class="review-header">
+                    <img src="images/defaultProfile.jpg" class="profile-pic">
+                    <div class="review-details">
+                      <h3 class="reviewer-username">${review.username}</h3>
+                      <div class="review-stars-and-date">
+                        <p class="review-stars">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</p>
+                        <span class="review-stars-seperator">·</span>
+                        <p class="review-date">Reviewed on ${new Date(review.postedAt).toLocaleDateString()} at ${new Date(review.postedAt).toLocaleTimeString()}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="review-content">
+                    <p class="review-text">${review.comment}</p>
+                  </div>
+                </div>
+                <hr class="review-seperator">`;
+              container.innerHTML += reviewHTML;
+            });
+          }
+        };
+        renderReviews();
       } else {
         alert("Recipe not found!");
       }
