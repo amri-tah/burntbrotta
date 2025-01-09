@@ -104,17 +104,17 @@ input {
   font-family: "Poppins";
 }
  
- .namenmail {
+.namenmail {
   display: flex;
   gap: 20px;
  }
  
- .namenmail input {
+.namenmail input {
   width: 50%;
   height: 40px;
  }
 
- .reviewncomment h1 {
+.reviewncomment h1 {
   margin-top: 50px;
   color: #333;
 }
@@ -136,7 +136,79 @@ input {
   padding: 10px;
 }
 .review .fa-star {
-  color: gold; 
+  color: #fabb05; 
+}
+
+.no-reviews-message {
+  font-size: 16px; 
+  font-style: italic;
+  color: gray;
+  padding-bottom: 10px;
+}
+
+.review-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-pic {
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%; 
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+}
+
+.review-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px
+}
+
+.review-details h3 {
+  font-size: 15px;
+  margin: 0px;
+}
+
+.review-stars-and-date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.review-stars-and-date * {
+  margin: 0px;
+}
+
+.review-stars-seperator {
+  color: #555;
+  font-size: 16px;
+}
+
+.review-date {
+  font-size: 12px;
+}
+
+.review-stars {
+  color: #fabb05; 
+  font-size: 18px;
+}
+
+.review-content {
+  font-size: 16px;
+  margin-left: 3px;
+}
+
+.review-content p {
+  margin-bottom: 0px;
+}
+
+.review-seperator {
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .button {

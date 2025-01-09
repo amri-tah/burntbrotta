@@ -87,10 +87,11 @@
 	</div>
 
   <div class="reviewncomment">
+    <h1>REVIEW</h1>
+    
     <form name="reviewForm">
-      <h1>REVIEW</h1>
       <input type="text" id="msg" name="msg" placeholder="Write your message here..." required>
-  
+      
       <div class="namenmail">
         <input type="text" id="name" name="name" placeholder="Your Name" required>
         <input type="email" id="mail" name="mail" placeholder="Your Email" required>
@@ -98,8 +99,8 @@
       <div class="error-messages">
         <p id="name-error" class="error"></p>
         <p id="mail-error" class="error"></p>
-    </div>
-  
+      </div>
+      
       <div class="review">
         <i class="fas fa-star" data-value="1"></i>
         <i class="fas fa-star" data-value="2"></i>
@@ -107,10 +108,13 @@
         <i class="fas fa-star" data-value="4"></i>
         <i class="fas fa-star" data-value="5"></i>
       </div>
-  
+      
       <button class="button" type="submit">Submit</button>
     </form>
-  
+    
+    <h2>Posted Reviews</h2>
+    <div id="reviews-container"></div>
+
     <!-- Quote for fun -->
     <div class="quote">
       <p>"We burnt it, so you don't have to!"</p>
