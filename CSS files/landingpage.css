@@ -205,10 +205,12 @@
 
 .contactus h1{
   margin-left: 2%;
+  margin: 10px;
 }
 
 .formel {
   display: flex;
+  gap: 10px;
   width: 100%;     
 }
 
@@ -226,10 +228,68 @@ input {
   height: 2.5em; 
 }
 
-textarea {
-  height: 8em; 
+.input-group {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;   
+  margin: 10px;    
 }
 
+.input-group input {
+  width: 100%; 
+  border-radius: 5px;
+}
+
+textarea {
+  height: 8em; 
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #000000 ;
+  color: #ffffff; 
+  padding: 20px 25px;
+  font-family: 'Fuzzy Bubbles','Poppins', sans-serif;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  z-index: 1000;
+  max-width: 400px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.toast-message {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.toast-message span {
+  font-weight: bold;
+}
+
+.toast-close {
+  position: absolute;
+  top: 10px; 
+  right: 15px; 
+  font-weight: bold;
+  color: white;
+  font-size: 1.2em;
+}
 
 input[type="submit"] {
   width: 25%;        
