@@ -310,3 +310,17 @@ body {
         width: 100%;
     }
 
+#back-to-top{
+    background-color: #ffe55b;
+    color: #1a1a1a;
+    font-size: 20px;
+    font-family: poppins;
+    
+}
+
+#back-to-top:hover{
+    background-color: #1a1a1a;
+    color: #ffe55b;
+    transform: 1.1;
+
+}

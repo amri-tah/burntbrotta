@@ -40,4 +40,12 @@ window.onload = function () {
     .catch((error) => {
       console.error("Error fetching the recipe data:", error);
     });
-};
+}
+
+//selecting button by id
+var button=document.getElementById("back-to-top");
+//add a click event listener 
+button.addEventListener("click",()=>
+{
+  window.history.go(-1); // go back to the previous page
+});

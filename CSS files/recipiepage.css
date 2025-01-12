@@ -323,3 +323,16 @@ footer h2 {
   letter-spacing: 0.5px;
 }
 
+#back-to-top{
+  background-color: #ffe55b;
+  color: #1f1f1f;
+  font-size: 20px;
+  font-family: "poppins";
+  
+}
+
+#back-to-top:hover{
+  background-color:#1f1f1f;
+  color: #ffe55b;
+  transform: 1.1;
+}

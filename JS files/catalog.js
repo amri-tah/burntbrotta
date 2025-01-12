@@ -63,3 +63,12 @@ function generateStars(reviews) {
     }
     return stars.trim();
 }
+
+
+//selecting button by id
+var button=document.getElementById("back-to-top");
+//add a click event listener 
+button.addEventListener("click",()=>
+{
+  window.history.go(-1); // go back to the previous page
+});
