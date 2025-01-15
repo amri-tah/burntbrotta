@@ -205,10 +205,12 @@
 
 .contactus h1{
   margin-left: 2%;
+  margin: 10px;
 }
 
 .formel {
   display: flex;
+  gap: 10px;
   width: 100%;     
 }
 
@@ -226,13 +228,90 @@ input {
   height: 2.5em; 
 }
 
-textarea {
-  height: 8em; 
+.input-group {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;   
+  margin: 10px;    
 }
 
+.input-group input {
+  width: 100%; 
+  border-radius: 5px;
+}
+
+textarea {
+  height: 8em; 
+  border-radius: 5px;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+#toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #000000 ;
+  color: #ffffff; 
+  padding: 20px 25px;
+  font-family: 'Fuzzy Bubbles','Poppins', sans-serif;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  z-index: 1000;
+  max-width: 400px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.toast-message {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.toast-message span {
+  font-weight: bold;
+}
+
+.toast-close {
+  position: absolute;
+  top: 10px; 
+  right: 15px; 
+  font-weight: bold;
+  color: white;
+  font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+  #toast {
+    right: 10px;
+    bottom: 10px;
+    padding: 15px 20px; 
+    font-size: 0.9rem; 
+    max-width: 95%; 
+  }
+
+  .toast-close {
+    top: 8px;
+    right: 10px;
+    font-size: 1rem;
+  }
+}
 
 input[type="submit"] {
-  width: 25%;        
+  max-width: 300px;
+  width: auto;        
   height:3rem;       
   background-color: black;
   color: white;
@@ -242,8 +321,12 @@ input[type="submit"] {
   align-items: center;
   font-size: 1rem;
   font-weight: 300;
+  display: block;
   margin: 2%;      
   border-radius: 5px;
+  box-sizing: border-box; 
+  overflow: hidden;
+  white-space: nowrap; 
 }
 
 .mess {
@@ -288,7 +371,9 @@ input[type="submit"] {
   }
   input[type="submit"] {
     font-size: 1rem;
-    width: 45%;
+    width: 50%;
+    height: 2.5rem;
+    padding: 0.4rem 1.5rem;
   }
 }
 
@@ -363,10 +448,14 @@ input[type="submit"] {
   }
   .formel{
     margin: 1% 0%;
+    gap: 10px;
   }
   input{
     height: 2em;
     font-size: 0.75rem;
+  }
+  .input-group{
+    margin: 1%;
   }
   .img1{
     height: auto;
@@ -380,7 +469,8 @@ input[type="submit"] {
   }
   input[type="submit"] {
     font-size: 0.75rem;
-    width: 50%;
-    height: 2rem;
+    width: 70%; 
+    height: 2.2rem; 
+    padding: 0.3rem 1rem;
   }
 }
