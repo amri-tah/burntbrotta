@@ -448,10 +448,14 @@ input[type="submit"] {
   }
   .formel{
     margin: 1% 0%;
+    gap: 10px;
   }
   input{
     height: 2em;
     font-size: 0.75rem;
+  }
+  .input-group{
+    margin: 1%;
   }
   .img1{
     height: auto;
