@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Burnt Brotta | Login</title>
+        <link href="./CSS files/" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="signup.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="container">
+        <form id="signup-form" action="/post" method="post">
+            <h2>Sign Up</h2>
+            <div class="name-fields">
+                <div class="name-field">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+                <div class="name-field">
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+            </div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </form>
+    </div>
+    <script src="./JS files/server.js"></script>
+</body>
+</html>
